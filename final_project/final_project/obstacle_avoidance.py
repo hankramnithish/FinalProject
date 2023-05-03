@@ -35,12 +35,14 @@ class ReadingLaser(Node):
         self.obstacle_status_counter = 0
         self.laser_detect_flag = 0
 
+        #initialize an index array to filter laser data
+        self.index = np.arange(90,270,dtype=int)
+
     def laser_callback(self,laser_msg):
         # receives full laser data and filters specified range of laser data
         self.laser_data = laser_msg
         laser_point_data = np.array(self.laser_data.ranges)
-        index = np.arange(90,270,dtype=int)
-        self.filtered_laser_data = laser_point_data[index]
+        self.filtered_laser_data = laser_point_data[self.index]
         self.laser_detect_flag = 1
         
 
