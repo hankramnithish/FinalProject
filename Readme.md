@@ -17,3 +17,7 @@ The "final_project" is the package that contains the launch files and all the py
 
 
 The "sensor.launch.py" is used to launch the Camera and LIDAR while inside the Turltebot4 terminal.  --> MUST BE INSIDE A PACKAGE !!! 
+
+
+
+final_project --> final_project --> best.pt               - Trained custom YOLOv5 model weights
