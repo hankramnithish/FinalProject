@@ -21,7 +21,8 @@ setup(
     entry_points={
         'console_scripts': [ 'robot_control=final_project.robot_control:main',
         'robot_recognition=final_project.robot_recognition:main',
-        'obstacle_avoidance=final_project.obstacle_avoidance:main',  
+        'obstacle_avoidance=final_project.obstacle_avoidance:main',
+        'image_sub_save=final_project.image_save:main',
         ],
     },
 )
